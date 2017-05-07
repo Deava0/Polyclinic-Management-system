@@ -167,8 +167,9 @@ Public Class MainForm
             Dim stf_reg = New stf_reg()
             stf_reg.Show()
         ElseIf nav_tree.SelectedNode.Name = "logs" Then
-            Dim logs ' = logs()
-            logs.Show()
+            ' Dim logs  = logs()
+            'logs.Show()
+            MessageBox.Show("Logs are not available at the moment, please wait for the next version of the management system", "Unavailable")
         End If
     End Sub
 
@@ -191,6 +192,6 @@ Public Class MainForm
 
     Private Sub ContactUsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ContactUsToolStripMenuItem.Click
         MessageBox.Show("Dev Name : Asad Al-Badi
-Dev Email : m120130303017@buc.edu.om", "Contact Us", MessageBoxButtons.OK, MessageBoxIcon.Information)
+Dev Email : Astral.Hive@gmail.com", "Contact Us", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
 End Class
