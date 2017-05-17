@@ -1,7 +1,5 @@
-------------------------------------------------------------------------------------------
-Senior Project,
-Al-Buraimi University College, IT department : http://buc.edu.om/en/default.aspx
-------------------------------------------------------------------------------------------
+[Senior Project,Al-Buraimi University College, IT department :](http://buc.edu.om/en/default.aspx)
+
 at# Polyclinic-Management-system
 A management system for polyclinics, developed using VS2017(VB.NET) and MySql.
 
@@ -9,9 +7,9 @@ Visual studio 2015/2017 is required to continue the development of this project,
 then you'll have to apply either the mysql dumps( can be found in assets\database folder) or the .sql file that can be found at the same folder.
 
 applications used in the project :
-* Visual Studio 2015/2017 https://docs.microsoft.com/en-us/visualstudio/welcome-to-visual-studio
-* MySQL Workbench 6.3 CE https://dev.mysql.com/downloads/mysql/
-* Git version control system https://git-scm.com/downloads
-* Dia(a Linux application used to make diagrams) http://dia-installer.de/download/linux.html.en
+* [Visual Studio 2015/2017](https://docs.microsoft.com/en-us/visualstudio/welcome-to-visual-studio)
+* [MySQL Workbench 6.3 CE](https://dev.mysql.com/downloads/mysql/)
+* [Git version control system](https://git-scm.com/downloads)
+* [Dia(a Linux application used to make diagrams)](http://dia-installer.de/download/linux.html.en)
 
-I'll add crystal reports as soon as SAP releases its new patch for VS2017 https://www.sap.com/product/analytics/crystal-visual-studio.html
+I'll add crystal reports as soon as [SAP releases its new patch for VS2017](https://www.sap.com/product/analytics/crystal-visual-studio.html)
