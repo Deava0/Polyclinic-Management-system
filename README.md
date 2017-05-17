@@ -10,6 +10,6 @@ applications used in the project :
 * [Visual Studio 2015/2017](https://docs.microsoft.com/en-us/visualstudio/welcome-to-visual-studio)
 * [MySQL Workbench 6.3 CE](https://dev.mysql.com/downloads/mysql/)
 * [Git version control system](https://git-scm.com/downloads)
-* [Dia(a Linux application used to make diagrams)](http://dia-installer.de/download/linux.html.en)
+* [Dia(for diagrams, used in linux mint 18.1)](http://dia-installer.de/download/linux.html.en)
 
 I'll add crystal reports as soon as [SAP releases its new patch for VS2017](https://www.sap.com/product/analytics/crystal-visual-studio.html)
