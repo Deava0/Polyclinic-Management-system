@@ -1,3 +1,7 @@
+------------------------------------------------------------------------------------------
+Senior Project
+Al-Buraimi Univesity College, IT department : http://buc.edu.om/en/default.aspx
+------------------------------------------------------------------------------------------
 at# Polyclinic-Management-system
 A management system for polyclinics, developed using VS2017(VB.NET) and MySql.
 
