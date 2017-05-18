@@ -44,6 +44,7 @@ Public Class pt_rcrd_modi
 
         Dim MySqlDtAd As New MySqlDataAdapter
         Dim BinSouc As New BindingSource
+        DB_tablePT.Clear()
         Try
             mysqlconn.Open()
             Dim Qu As String = "SELECT id AS ID, civil_id AS CivilID, prefix as Prefix, first_name AS FirstName, second_name AS SecondName, third_name AS ThirdName,fourth_name AS FourthName, tribe_name AS TribeName
@@ -74,7 +75,7 @@ Public Class pt_rcrd_modi
     End Sub
 
     Private Sub pt_id_rbtn_CheckedChanged(sender As Object, e As EventArgs) Handles pt_id_rbtn.CheckedChanged
-        fltr = "id = '" & srch_txtbx.Text & "' "
+        fltr = "id LIKE '" & srch_txtbx.Text & "' "
     End Sub
 
     Private Sub pt_nm_rbtn_CheckedChanged(sender As Object, e As EventArgs) Handles pt_nm_rbtn.CheckedChanged
@@ -159,5 +160,32 @@ Public Class pt_rcrd_modi
             End If
 
         End If
+    End Sub
+
+    Private Sub pt_grid_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles pt_grid.CellClick
+        Try
+            If e.RowIndex >= 0 Then
+                Dim row As DataGridViewRow
+                row = Me.pt_grid.Rows(e.RowIndex)
+                id_txtbx.Text = row.Cells("ID").Value
+                id_txtbx.Text = id_txtbx.Text.PadLeft(4, "0")
+                cvl_id_txtbx.Text = row.Cells("CivilID").Value
+                frst_nm_txtbx.Text = row.Cells("FirstName").Value.ToString
+                prfx_cbx.Text = row.Cells("Prefix").Value.ToString
+                scnd_nm_txtbx.Text = row.Cells("SecondName").Value.ToString
+                thrd_nm_txtbx.Text = row.Cells("ThirdName").Value.ToString
+                frth_nm_txtbx.Text = row.Cells("FourthName").Value.ToString
+                trib_nm_txtbx.Text = row.Cells("TribeName").Value.ToString
+                phn_no_txtbx.Text = row.Cells("PhoneNO").Value.ToString
+                dob_pkr.Text = row.Cells("DoB").Value.ToString
+                gndr_cbx.Text = row.Cells("Gender").Value.ToString
+                adrs_txtbx.Text = row.Cells("Address").Value.ToString
+                nation_txtbx.Text = row.Cells("Nationality").Value.ToString
+                eml_txtbx.Text = row.Cells("Email").Value.ToString
+                bld_typ_txtbx.Text = row.Cells("BloodType").Value.ToString
+            End If
+        Catch ex As Exception
+            MessageBox.Show(ex.Message, "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
     End Sub
 End Class
