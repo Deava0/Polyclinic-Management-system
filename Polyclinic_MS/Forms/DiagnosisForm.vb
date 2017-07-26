@@ -156,6 +156,12 @@ Public Class DiagnosisForm
                         Dim cmd5 As New MySqlCommand(Qu5, MySqlConn)
                         Dim rdr5 As MySqlDataReader = cmd5.ExecuteReader
                         MySqlConn.Close()
+                        'Free up the doctor
+                        MySqlConn.Open()
+                        Dim Qu9 As String = "UPDATE mcms.doct_work_q SET work_state='Next', crnt_pt=NULL, actv_vst_id=NULL where doct_id='" & M_id & "' "
+                        Dim cmd9 = New MySqlCommand(Qu9, MySqlConn)
+                        Dim rdr9 As MySqlDataReader = cmd9.ExecuteReader
+                        MySqlConn.Close()
 
                     Catch ex As MySqlException
                         MessageBox.Show(ex.Message, "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error)
